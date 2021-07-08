@@ -76,10 +76,11 @@ a:hover {
     color: #fff;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
+
 .header__top {
-    position: relative; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,6 +281,10 @@ a:hover {
 }
 
 .smoothies__container{
+    max-width:1140px;
+    margin: 0 auto;
+}
+.smoothies__inner{
     display: flex;
     flex-direction:column;
     align-items:center;
@@ -314,20 +319,15 @@ a:hover {
 }
 
 .smoothies__features {
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 500px;
-    width: 100%;
-    background: #f6edde;
-    gap: 1px;
-
+    max-width: 1180px;
 }
 
+/*при медиазапросе на 768 изменить на max-width 500px*/
 .smoothies__feature {
     display: flex;
     flex-direction: column;
-    flex-flow: column wrap;
     align-items:center;
     justify-content: center;
     height: 180px;
@@ -337,10 +337,20 @@ a:hover {
     border-right: 1px solid #f6edde;
 }
 
+/*при медиазапросе basis 50% и переписать бордеры тогда*/
+
 .smoothies__feature:nth-child(4) {border-right: 0;}
 .smoothies__feature:nth-child(8) {border-right: 0;}
 .smoothies__feature:nth-child(n+5) {border-bottom: 0;}
 
+@media (max-width: 768px) {
+    .smoothies__features {
+    max-width: 500px;
+    }
+    .smoothies__feature {
+        flex-basis: 50%;
+    }
+}
 
 .feature__text--orange {
     font-family: 'Muli-ExtraBold';

@@ -83,9 +83,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
+    padding: 88px 100px 124px;
 }
 
 /*menu*/
@@ -112,18 +110,18 @@ a:hover {
 
 /*logo*/
 
-/*
+
 .header__logo {
     position: absolute;
-    top: 50%;
+    top: 70px;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
 }
-*/
+
 
 /*right block*/
 .header__right-block {
@@ -216,17 +214,13 @@ a:hover {
 .header__btn {
     height: 70px;
     width: 280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+    color:#fff;
     font-size: 24px;
     border-radius: 35px;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.67;
     letter-spacing: -0.48px;
-    color: #fff;
     padding: 0 38px;
 }
 
@@ -282,7 +276,7 @@ a:hover {
 /*what are smoothies*/
 
 .smoothies {
-    padding: 98px;
+    padding: 98px 10px;
 }
 
 .smoothies__container{
@@ -320,8 +314,14 @@ a:hover {
 }
 
 .smoothies__features {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+    width: 100%;
+    background: #f6edde;
+    gap: 1px;
+
 }
 
 .smoothies__feature {
@@ -445,7 +445,6 @@ a:hover {
     position: relative;
     padding-left:29px;
     text-align:left;
-    padding-right: 40px;
 }
 
 
@@ -678,7 +677,7 @@ a:hover {
     max-height: 148px;
     z-index: 0;
     position:absolute;
-    left: -15%;
+    left: -2%;
 }
 
 .testimonials__author-name {
@@ -741,7 +740,6 @@ a:hover {
 
 .blog__inner::after {
     content: "";
-    position: absolute;
     width: 687px;
     height: 12px;
     background-image: url("./assets/images/photoshop-img/blog-Line.png");
@@ -798,6 +796,7 @@ a:hover {
 .blog span {
     font-family: 'Muli-ExtraBold';
     font-size: 18px;
+    font-style: italic;
     position: relative;
 }
 
@@ -902,7 +901,6 @@ a:hover {
 
 .footer__top{
     padding-left: 103px;
-    padding-right: 100px;
 }
 
 .footer h2 {
@@ -1091,16 +1089,9 @@ a:hover {
     right:215px;
 }
 
-.footer__copyright-label {
-    font-family: 'Muli-Regular';
-    color: #ffffff;
-    font-weight:700;
-    line-height: 40px;
-    font-size: 16px;
-}
 
 .footer__copyright-btn {
-    right:100px;
+    right: 101px;
     width: 50px;
     height: 50px;
     border:0;

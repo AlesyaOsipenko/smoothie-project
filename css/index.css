@@ -293,12 +293,10 @@ a:hover {
 
 .smoothies__title {
     margin: 0 0 55px;
+    text-align: center;
 }
 
 .smoothies__title-content {
-    display: flex;
-    justify-content: center;
-    align-items:center;
     font-size:50px;
     letter-spacing: -1px;
 }

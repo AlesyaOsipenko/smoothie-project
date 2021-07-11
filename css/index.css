@@ -280,11 +280,6 @@ a:hover {
     padding: 98px 10px;
 }
 
-.smoothies__container{
-    max-width:1110px;
-    margin: 0 auto;
-}
-
 .smoothies__inner{
     display: flex;
     flex-direction:column;
@@ -537,4 +532,71 @@ a:hover {
     width: 30px;
     height: 16px;
     right:36px;
+}
+
+/*our story*/
+
+.story__title {
+    line-height: 40px;
+    margin: 0;
+    font-size: 50px;
+}
+
+.story__desc {
+    margin: 0;
+    color:#1e1e1e;
+    line-height: 35px;
+    font-family: 'Muli-Regular';
+    margin-top: 43px;
+
+}
+
+.story__container {
+    display:flex;
+    flex-direction:column;
+    margin-top: 260px;
+    max-width:1025px;
+}
+
+.btn--green {
+    border-radius: 30px;
+    background-color: #0aa566;
+    width: 301px;
+    height: 60px;
+    padding: 0;
+    color:#ffffff;
+    margin-top: 60px;
+    font-size: 21px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.btn--green::after {
+    content: "";
+    display: inline-block;
+    background-image:url("../css/assets/images/photoshop-img/about-Arrow.png");
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    right:40px;
+}
+
+.story__image {
+    width:50%;
+    position: relative;
+    margin-bottom: 160px;
+    margin-top: 120px;
+    margin-left: 206px;
+    position: relative;
+}
+
+.story__image::after {
+    content: "";
+    display: block;
+    position:absolute;
+    background-image: url("./assets/images/photoshop-img/story-stamp.png");
+    width: 290px;
+    height: 216px;
+    top:0px;
+    left:-150px;
 }

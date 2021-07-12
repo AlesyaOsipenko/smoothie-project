@@ -3,8 +3,12 @@ h1, h2, h3{
     padding: 0;
 }
 
-*{
+*
+*::before,
+*::after{
     box-sizing:border-box;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -45,10 +49,6 @@ ul {
     margin:0;
 }
 
-a {
-    display: inline-block;
-}
-
 a:hover {
     text-decoration: none;
     color: inherit;
@@ -76,7 +76,8 @@ a:hover {
 /*header*/
 .header {
     height: 100vh;
-    background: url('../css/assets/images/photoshop-img/main-img.png');
+    background-image: url('../css/assets/images/photoshop-img/main-img.png');
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -213,7 +214,6 @@ a:hover {
 }
 
 /*btn*/
-
 .header__btn {
     height: 70px;
     width: 280px;
@@ -224,12 +224,11 @@ a:hover {
     line-height: 1.67;
     letter-spacing: -0.48px;
     padding: 0 38px;
+    position: relative;
 }
 
 .btn--green-bg {
-    display: flex;
     background-color: #0aa566;
-    position: relative;
 }
 
 .btn--green-bg:hover{

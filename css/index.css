@@ -3,7 +3,7 @@ h1, h2, h3{
     padding: 0;
 }
 
-*
+*,
 *::before,
 *::after{
     box-sizing:border-box;
@@ -257,6 +257,7 @@ a:hover {
 .block-title {
     font-family: 'Muli-ExtraBold';
     color:#f7ae3b;
+    font-size: 50px;
 }
 
 /*text*/
@@ -519,8 +520,6 @@ a:hover {
     margin:65px 0px 79px;
     padding-left:36px;
     position: relative;
-    color:#ffffff;
-    line-height: 22px;
 }
 
 .products__btn::after {
@@ -530,42 +529,45 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 16px;
-    right:36px;
+    right:16px;
 }
 
 /*our story*/
 
+.story{
+    margin: 120px 0px 160px;
+}
+
+.story__wrapper{
+padding: 0 220px 0;
+display: flex;
+}
+
+.noname {
+    max-width: 510px;
+}
+
 .story__title {
     line-height: 40px;
-    margin: 0;
-    font-size: 50px;
 }
 
 .story__desc {
-    margin: 0;
-    color:#1e1e1e;
     line-height: 35px;
-    font-family: 'Muli-Regular';
     margin-top: 43px;
-
 }
 
-.story__container {
+.story__inner {
     display:flex;
     flex-direction:column;
-    margin-top: 260px;
-    max-width:1025px;
+    justify-content: center;
+    margin-right: 206px;
 }
 
-.btn--green {
+.story__btn {
     border-radius: 30px;
-    background-color: #0aa566;
-    width: 301px;
+    max-width: 301px;
     height: 60px;
-    padding: 0;
-    color:#ffffff;
     margin-top: 60px;
-    font-size: 21px;
     padding-left: 30px;
     position: relative;
 }
@@ -581,11 +583,6 @@ a:hover {
 }
 
 .story__image {
-    width:50%;
-    position: relative;
-    margin-bottom: 160px;
-    margin-top: 120px;
-    margin-left: 206px;
     position: relative;
 }
 
@@ -597,5 +594,5 @@ a:hover {
     width: 290px;
     height: 216px;
     top:0px;
-    left:-150px;
+    left:-170px;
 }

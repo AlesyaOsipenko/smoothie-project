@@ -548,7 +548,7 @@ a:hover {
 /*our story*/
 
 .story{
-    margin: 120px 0px 160px;
+    padding: 120px 0px 160px;
 }
 
 .story__wrapper{
@@ -829,7 +829,7 @@ a:hover {
 
 .footer {
     margin-top: 10px;
-    background-color: #f6ab3b;
+    
 }
 
 .footer__title {
@@ -841,21 +841,19 @@ a:hover {
     color: #ffffff;
 }
 
-.footer__logo {
-    margin: 133px 0 182px 0 ;
+.footer__top {
+    padding: 80px 0;
+    background-color: #f6ab3b;
 }
 
 .footer__top-content {
     display: flex;
     justify-content: space-between;
 }
-
-.footer__inner{
-    display:flex;
-    justify-content: space-between;
-    width: 1213px;
-    margin-top: 80px;
+.footer__logo {
+    align-self: center;
 }
+
 
 /*information*/
 .information {
@@ -863,8 +861,8 @@ a:hover {
 }
 
 .information__title {
-    margin: 0;
-    margin-bottom: 43px;
+    
+    margin-bottom: 42px;
 }
 
 .information__list-link {

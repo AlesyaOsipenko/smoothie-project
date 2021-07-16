@@ -737,6 +737,7 @@ a:hover {
     flex-direction: column;
     padding-top: 235px ;
     margin-left: 60px;
+
 }
 
 .blog__desc-title {
@@ -770,4 +771,56 @@ a:hover {
 .blog__ingridients {
     max-width: 472px;
     padding-left:63px;
+}
+
+/*Instagram*/
+
+.insta__icon {
+    padding-right:12px;
+}
+
+.insta__wrapper{
+    margin:45px 0px 10px;
+    display:flex;
+    overflow-x: scroll;
+}
+
+.insta__item {
+    display:flex;
+    flex-direction:column;
+    flex: 1 0 20%;
+    position: relative;
+}
+
+.insta__item::before {
+    content:"";
+    display: block;
+    background-image:url("../css/assets/images/photoshop-img/Shadow.png");
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 13px;
+    height: 13px;
+}
+
+.insta__item::after {
+    content:"";
+    display: block;
+    background-image:url("../css/assets/images/photoshop-img/insticon.png");
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    right:22px;
+    bottom: 20px;
+}
+
+.insta__link {
+    font-family: 'Muli-ExtraBold';
+    font-size: 24px;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+    color: #0aa566;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }

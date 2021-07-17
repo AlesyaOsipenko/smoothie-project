@@ -260,6 +260,11 @@ a:hover {
     font-size: 50px;
 }
 
+.title--white {
+    color: #ffffff;
+}
+
+
 /*text*/
 .text {
     font-family: 'Muli-Regular';
@@ -395,7 +400,6 @@ a:hover {
 }
 
 .about__title {
-    color: #fff;
     line-height: 1.09;
     letter-spacing: -1.1px;
     font-size: 55px;
@@ -507,7 +511,6 @@ a:hover {
 
 /*products__titles*/
 .products__title {
-    color: #ffffff;
     font-family: 'Muli-Bold';
     font-stretch: normal;
     font-style: normal;
@@ -830,10 +833,6 @@ a:hover {
 .footer {
     margin-top: 10px;
     
-}
-
-.title--white {
-    color: #ffffff;
 }
 
 .footer__title {

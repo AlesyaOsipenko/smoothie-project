@@ -651,6 +651,19 @@ a:hover {
 .testimonials__comment {
     display: flex;
     margin-bottom: 121px;
+    z-index: 1;
+}
+
+.testimonials__comment::before {
+    content:"Sarah A";
+    opacity: 0.6;
+    font-family: "Muli-ExtraBold";
+    font-size: 200px;
+    color: rgba(82, 25, 5, 0.6);
+    position: absolute;
+    top: 235px;
+    left: 350px;
+    z-index: -1;
 }
 
 .comment__text {
@@ -682,23 +695,19 @@ a:hover {
     justify-content: space-between;
 }
 
-/*
-.testimonials__author {
-    z-index: 0;
-    position:absolute;
-}
 
+/*
 .testimonials__author-name {
-    margin: 0;
-    padding: 0;
     opacity: 0.6;
     font-family: "Muli-ExtraBold";
     font-size: 200px;
     color: rgba(82, 25, 5, 0.6);
-    transform: translate(438px, 220px);
+    z-index: 0;
+    position:absolute;
+    right: 0;
+    bottom: 0;
 }
 */
-
 
 /*blog*/
 

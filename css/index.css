@@ -662,7 +662,7 @@ a:hover {
     color: rgba(82, 25, 5, 0.6);
     position: absolute;
     top: 235px;
-    left: 350px;
+    left: 310px;
     z-index: -1;
 }
 
@@ -695,19 +695,6 @@ a:hover {
     justify-content: space-between;
 }
 
-
-/*
-.testimonials__author-name {
-    opacity: 0.6;
-    font-family: "Muli-ExtraBold";
-    font-size: 200px;
-    color: rgba(82, 25, 5, 0.6);
-    z-index: 0;
-    position:absolute;
-    right: 0;
-    bottom: 0;
-}
-*/
 
 /*blog*/
 
@@ -857,7 +844,6 @@ a:hover {
 
 .footer__top-content {
     display: flex;
-    justify-content: space-between;
 }
 .footer__logo {
     align-self: center;
@@ -867,6 +853,7 @@ a:hover {
 /*information*/
 .information {
     max-width: 159px;
+    margin: 0 155px 0 295px ;
 }
 
 .information__list-link {
@@ -880,18 +867,21 @@ a:hover {
 /*payment*/
 .payment {
     max-width:270px ;
+    margin-right: 165px;;
 }
 
 .payment__img {
-    margin-right:20px;
-    margin-bottom: 20px;
+    object-fit: cover;
+    height: 100%;
+
 }
 
 .payment__container {
-    max-width: 266px;
+    max-width: 275px;
     display: flex;
     flex-wrap: wrap;
     align-items:center;
+    gap:23px;
 }
 
 /*subscribe*/

@@ -67,10 +67,11 @@ a:hover {
     font-size: 21px;
     text-decoration: none;
     align-items:center;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    -ms-border-radius: 35px;
-    -o-border-radius: 35px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 /*header*/
@@ -493,7 +494,7 @@ a:hover {
     display:flex;
     flex-direction:column;
     align-items:center;
-    min-width: 480px;
+    min-width: 360px;
 }
 
 .products div:nth-child(1) {
@@ -531,7 +532,6 @@ a:hover {
 .products__btn {
     width: 204px;
     height: 60px;
-    border-radius: 30px;
     border: solid 2px #ffffff;
     margin:65px 0px 79px;
     padding-left:36px;
@@ -560,16 +560,13 @@ a:hover {
     justify-content: center;
 }
 
-.story__wrap {
-    max-width: 510px;
-}
-
 .story__title {
     line-height: 40px;
 }
 
 .story__desc {
-    padding-top: 43px;
+    margin-top: 43px;
+    max-width: 510px;
 }
 
 .story__inner {
@@ -580,7 +577,6 @@ a:hover {
 }
 
 .story__btn {
-    border-radius: 30px;
     max-width: 301px;
     height: 60px;
     margin-top: 60px;
@@ -792,6 +788,7 @@ a:hover {
     display:flex;
     flex-direction:column;
     flex: 1 0 20%;
+    min-width: 340px;
     position: relative;
 }
 
@@ -896,7 +893,8 @@ a:hover {
 .subscribe__input {                    
     border-radius: 30px;
     background-color: #ffffff;
-    width: 495px;
+    max-width: 495px;
+    width: 100%;
     height: 60px;
     color: #6d450c;
     border-style:none;
@@ -993,6 +991,17 @@ a:hover {
     -moz-border-radius:5px;
     -ms-border-radius:5px;
     -o-border-radius:5px;
+}
+
+.footer__copyright-btn::before {
+    content: "Go top";
+    color:#fff;
+    font-family: 'Muli-Bold';
+    font-size: 16px;
+    bottom: -15px;
+    font-size: 16px;
+    position: absolute;
+    left: -60px;
 }
 
 .footer__copyright-btn::after {

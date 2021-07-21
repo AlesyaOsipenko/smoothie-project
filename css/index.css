@@ -291,7 +291,7 @@ a:hover {
 /*what are smoothies*/
 
 .smoothies {
-    padding: 98px 10px;
+    padding: 90px 10px 135px;
 }
 
 .smoothies__inner{
@@ -301,7 +301,7 @@ a:hover {
 }
 
 .smoothies__title {
-    margin: 0 0 55px;
+    margin: 0 0 30px;
     text-align: center;
 }
 
@@ -386,7 +386,11 @@ a:hover {
 }
 
 .about__img {
-    transform: translateY(70px);
+    transform: translate(50px,55px);
+    -webkit-transform: translate(50px,55px);
+    -moz-transform: translate(50px,55px);
+    -ms-transform: translate(50px,55px);
+    -o-transform: translate(50px,55px);
 }
 
 .about__img-left {
@@ -397,7 +401,7 @@ a:hover {
 .about__info {
     display: flex;
     flex-direction: column;
-    margin: 97px 0px 0px 142px;
+    margin: 95px 0px 10px 190px;
 }
 
 .about__title {
@@ -439,7 +443,7 @@ a:hover {
     list-style: none;
     background: url(./assets/images/photoshop-img/icon1.png) no-repeat 0 4px;
     padding-left: 30px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     font-size: 21px;
 }
 

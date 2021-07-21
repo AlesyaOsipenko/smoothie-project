@@ -650,7 +650,9 @@ a:hover {
 
 .testimonials__comment {
     display: flex;
-    margin-bottom: 121px;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 120px;
     z-index: 1;
 }
 
@@ -661,8 +663,8 @@ a:hover {
     font-size: 200px;
     color: rgba(82, 25, 5, 0.6);
     position: absolute;
-    top: 235px;
-    left: 310px;
+    top: 205px;
+    left: 315px;
     z-index: -1;
 }
 

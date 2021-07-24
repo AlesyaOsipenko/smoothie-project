@@ -257,7 +257,7 @@ a:hover {
 
 /*titles*/
 
-.block-title {
+.title {
     font-family: 'Muli-ExtraBold';
     color:#f7ae3b;
     font-size: 50px;
@@ -276,11 +276,10 @@ a:hover {
 /*text*/
 .text {
     font-family: 'Muli-Regular';
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.94;
-    letter-spacing: normal;
+    
+    
+    line-height:50px;
+    letter-spacing: -0.9px;
 }
 
 .text--black {
@@ -298,7 +297,7 @@ a:hover {
 /*what are smoothies*/
 
 .smoothies {
-    padding: 90px 10px 135px;
+    padding: 90px 0 135px;
 }
 
 .smoothies__inner{
@@ -312,11 +311,13 @@ a:hover {
     text-align: center;
 }
 
-.smoothies__title-content {
+.smoothies__title {
     font-size:50px;
     letter-spacing: -1px;
 }
-
+.title--orange {
+   color: #f7ae3b;
+}
 .smoothies__text {
     font-size: 18px;
     line-height: 1.94;
@@ -627,7 +628,7 @@ a:hover {
 
 .testimonials {
     background-color: #672f1b;
-    padding: 117px 0 118px;
+    padding: 106px 0 70px;
     position: relative;
 }
 
@@ -695,8 +696,8 @@ a:hover {
 }
 
 .comment__avatar {
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     object-fit: cover;
 }
 

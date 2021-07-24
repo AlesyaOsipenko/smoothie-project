@@ -51,7 +51,7 @@ ul {
 
 a:hover {
     text-decoration: none;
-    color: inherit;
+    color: #232923;;
 }
 
 .container {
@@ -234,7 +234,7 @@ a:hover {
 }
 
 .btn--green-bg:hover{
-    background-color:#0b925c;
+    background-color:#14774f;
     color:white;
 }
 
@@ -254,13 +254,6 @@ a:hover {
     -o-transform: translateY(-50%);
 }
 
-.btn--green-bg:hover::after {
-    transform: translateX(5px);
-    -webkit-transform: translateX(5px);
-    -moz-transform: translateX(5px);
-    -ms-transform: translateX(5px);
-    -o-transform: translateX(5px);
-}
 
 /*titles*/
 
@@ -273,6 +266,11 @@ a:hover {
 .title--white {
     color: #ffffff;
 }
+
+.title--white:hover {
+    color:#6c2c1c;
+}
+
 
 
 /*text*/
@@ -498,8 +496,7 @@ a:hover {
 }
 
 .products__img {
-    width: 30%;
-    margin-top: 130px;
+    margin-top: 104px;
 }
 
 .products__card {
@@ -509,7 +506,7 @@ a:hover {
     align-items:center;
 }
 
-.products div:nth-child(1) {
+.products div:first-child {
     background-color: #632b17;
 }
 .products div:nth-child(2) {
@@ -675,8 +672,8 @@ a:hover {
     font-size: 200px;
     color: rgba(82, 25, 5, 0.6);
     position: absolute;
-    top: 205px;
-    left: 315px;
+    top: 185px;
+    left: 404px;
     z-index: -1;
 }
 
@@ -916,6 +913,13 @@ a:hover {
     padding-left:63px;
 }
 
+.subscribe__input:focus{
+    outline: none;
+}
+
+.subscribe__input:active{
+    box-shadow: inset 0px 0px 9px 0px rgb(1 1 1 / 1);
+}
 .subscribe__form {
     position: relative;
 }

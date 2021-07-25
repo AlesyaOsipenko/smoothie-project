@@ -271,15 +271,15 @@ a:hover {
     color:#6c2c1c;
 }
 
+.title--orange {
+    color: #f7ae3b;
+}
 
 
 /*text*/
 .text {
     font-family: 'Muli-Regular';
-    
-    
-    line-height:50px;
-    letter-spacing: -0.9px;
+    line-height:35px;
 }
 
 .text--black {
@@ -315,15 +315,13 @@ a:hover {
     font-size:50px;
     letter-spacing: -1px;
 }
-.title--orange {
-   color: #f7ae3b;
-}
+
 .smoothies__text {
     font-size: 18px;
-    line-height: 1.94;
     max-width: 915px;
     margin: 0 0 60px;
     text-align: center;
+    letter-spacing: -0.1px;
 }
 
 .smoothies__features {
@@ -363,8 +361,6 @@ a:hover {
 .feature__text--orange {
     font-family: 'Muli-ExtraBold';
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.6;
     letter-spacing: -0.5px;
     text-align: center;
@@ -377,7 +373,7 @@ a:hover {
 }
 
 @media (max-width: 1024px) {
-    .smoothies__title-content {
+    .smoothies__title {
         font-size: 2.6em;
     }
 }
@@ -386,6 +382,7 @@ a:hover {
 
 .about {
     background-color: #14826f;
+    height: 800px;       /*это убирать*/
 }
 
 .about__wrapper{
@@ -394,11 +391,11 @@ a:hover {
 }
 
 .about__img {
-    transform: translate(50px,55px);
-    -webkit-transform: translate(50px,55px);
-    -moz-transform: translate(50px,55px);
-    -ms-transform: translate(50px,55px);
-    -o-transform: translate(50px,55px);
+    transform: translate(45px,60px);
+    -webkit-transform: translate(45px,60px);
+    -moz-transform: translate(45px,60px);
+    -ms-transform: translate(45px,60px);
+    -o-transform: translate(45px,60px);
 }
 
 .about__img-left {
@@ -409,7 +406,7 @@ a:hover {
 .about__info {
     display: flex;
     flex-direction: column;
-    margin: 95px 0px 10px 190px;
+    margin: 89px 0px 10px 185px;
 }
 
 .about__title {
@@ -427,8 +424,8 @@ a:hover {
     content:"";
     position: absolute;
     background-image: url("./assets/images/photoshop-img/Line-img.png");
-    top:60px;
-    left:0px;
+    top: 65px;
+    left: -10px;
     width: 450px;
     height: 13px;
     display: inline-block;
@@ -438,19 +435,15 @@ a:hover {
 .about__list {
     color: #fff;
     font-family: 'Muli-ExtraBold';
-    font-stretch: normal;
-    font-style: normal;
     letter-spacing: normal;
-    font-weight: normal;
-    line-height: 22px;
     padding-left: 0;
-    margin-top: 68px;
+    margin-top: 57px;
 }
 
 .about__list-item {
     list-style: none;
     background: url(./assets/images/photoshop-img/icon1.png) no-repeat 0 4px;
-    padding-left: 30px;
+    padding-left: 35px;
     margin-bottom: 20px;
     font-size: 21px;
 }
@@ -466,7 +459,6 @@ a:hover {
     font-size: 21px;
     position: relative;
     padding-left:29px;
-    text-align:left;
     margin: 50px 0 94px;
 }
 
@@ -478,7 +470,7 @@ a:hover {
     width: 30px;
     height: 16px;
     top:50%;
-    right:29px;
+    right:35px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -497,7 +489,7 @@ a:hover {
 }
 
 .products__img {
-    margin-top: 104px;
+    margin-top: 125px;
 }
 
 .products__card {
@@ -523,12 +515,10 @@ a:hover {
 /*products__titles*/
 .products__title {
     font-family: 'Muli-Bold';
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.92;
-    letter-spacing: normal;
-    margin-top:34px;
+    margin-top: 33px;
+    line-height: 21px;
     font-size:22px;
+    letter-spacing: 0.9px;
 }
 
 .products__subtitle {
@@ -555,7 +545,7 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 16px;
-    right:16px;
+    right:33px;
 }
 
 /*our story*/
@@ -571,12 +561,16 @@ a:hover {
 }
 
 .story__title {
+    margin-bottom: 35px;
     line-height: 40px;
+    letter-spacing: -0.02em;
 }
 
 .story__desc {
-    margin-top: 43px;
     max-width: 510px;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -0.1px;
 }
 
 .story__inner {
@@ -590,7 +584,7 @@ a:hover {
     max-width: 301px;
     height: 60px;
     margin-top: 60px;
-    padding-left: 30px;
+    padding-left: 25px;
     position: relative;
 }
 
@@ -601,7 +595,7 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 16px;
-    right:40px;
+    right:45px;
 }
 
 .story__image {
@@ -615,8 +609,8 @@ a:hover {
     background-image: url("./assets/images/photoshop-img/story-stamp.png");
     width: 290px;
     height: 216px;
-    top:0px;
-    left:-170px;
+    top: 22px;
+    left: -167px;
 }
 
 .story__pic {
@@ -628,7 +622,7 @@ a:hover {
 
 .testimonials {
     background-color: #672f1b;
-    padding: 106px 0 70px;
+    padding: 105px 0 70px;
     position: relative;
 }
 
@@ -639,7 +633,7 @@ a:hover {
     background-image: url("./assets/images/photoshop-img/dots-img.png");
     width: 410px;
     height: 301px;
-    top:-95px;
+    top:-85px;
     right: 58px;
 }
 
@@ -673,8 +667,8 @@ a:hover {
     font-size: 200px;
     color: rgba(82, 25, 5, 0.6);
     position: absolute;
-    top: 185px;
-    left: 404px;
+    top: 200px;
+    left: 410px;
     z-index: -1;
 }
 
@@ -683,11 +677,12 @@ a:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 52px 59px 0 0;
+    margin: 40px 60px 0 0;
 }
 
 .comment__quote {
     line-height: 35px;
+    letter-spacing: 0.9px;
 }
 
 .comment__cite {
@@ -711,7 +706,7 @@ a:hover {
 /*blog*/
 
 .blog {
-    padding: 100px 0;
+    padding: 100px 0 180px;
 }
 
 .blog__wrapper{
@@ -742,8 +737,9 @@ a:hover {
 .blog__desc{
     display: flex;
     flex-direction: column;
-    padding-top: 235px ;
-    margin-left: 60px;
+    padding-top: 230px ;
+    margin-left: 70px;
+    padding-right:23px;
 
 }
 
@@ -751,10 +747,12 @@ a:hover {
     color:#f2612d;
     font-family: 'Muli-ExtraBold';
     font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
 }
 
 .blog__desc-date {
-    margin: 20px 0px 45px;
+    margin: 0px 0px 20px;
 }
 
 .blog span {
@@ -777,7 +775,9 @@ a:hover {
 
 .blog__ingridients {
     max-width: 472px;
-    padding-left:63px;
+    padding-left:45px;
+    line-height: 35px;
+    letter-spacing: 0.2px;
 }
 
 /*Instagram*/
@@ -787,9 +787,9 @@ a:hover {
 }
 
 .insta__wrapper{
-    margin:45px 0px 10px;
+    margin:50px 0px 10px;
     display:flex;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .insta__item {
@@ -825,37 +825,36 @@ a:hover {
 .insta__link {
     font-family: 'Muli-ExtraBold';
     font-size: 24px;
-    line-height: 1.67;
-    letter-spacing: -0.48px;
     color: #0aa566;
     display:flex;
     justify-content:center;
     align-items:center;
+    line-height: 40px;
+    letter-spacing: -0.02em;
 }
 
 /*footer*/
 
 .footer {
     margin-top: 10px;
-    
 }
 
 .footer__title {
     font-family: 'MulI-ExtraBold';
     font-size: 26px;
-    font-weight: 800;
-    line-height: 1.54;
-    letter-spacing: -0.52px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
 }
 
 .footer__top {
-    padding: 80px 0;
+    padding: 60px 0 80px;
     background-color: #f6ab3b;
 }
 
 .footer__top-content {
     display: flex;
+    flex-wrap: wrap;
 }
 .footer__logo {
     align-self: center;
@@ -879,7 +878,7 @@ a:hover {
 /*payment*/
 .payment {
     max-width:270px ;
-    margin-right: 165px;;
+    margin-right: 140px;
 }
 
 .payment__img {
@@ -956,8 +955,8 @@ a:hover {
     display: block;
     background-image:url("../css/assets/images/photoshop-img/Arrow.png");
     position: absolute;
-    left:-30%;
-    top: -19px;
+    left: -25%;
+    top: -15px;
     width: 48px;
     height: 43px;
     }
@@ -965,8 +964,8 @@ a:hover {
 .sub-social{
     display: flex;
     justify-content: flex-end;
-    margin-right: 52px;
-    margin-top:27px;
+    margin-right: 50px;
+    margin-top: 20px;
 }
 
 .sub-social__list {
@@ -1011,15 +1010,19 @@ a:hover {
     -o-border-radius:5px;
 }
 
+.footer__copyright-btn:hover{
+    background-color:#b44113;
+}
+
 .footer__copyright-btn::before {
     content: "Go top";
     color:#fff;
     font-family: 'Muli-Bold';
     font-size: 16px;
-    bottom: -15px;
+    bottom: -5px;
     font-size: 16px;
     position: absolute;
-    left: -60px;
+    left: -65px;
 }
 
 .footer__copyright-btn::after {

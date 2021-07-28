@@ -49,9 +49,18 @@ ul {
     margin:0;
 }
 
+img {
+    object-fit: cover;
+}
+
 a:hover {
     text-decoration: none;
     color: #232923;;
+}
+
+button {
+    border:none;
+    background-color: transparent;
 }
 
 .container {
@@ -81,15 +90,28 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
     background-attachment: fixed;
 }
 
 .header__top {
+    padding: 88px 0 124px;
+    position: relative;
+}
+
+.header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 88px 0 124px;
+}
+
+.header__burger--btn {
+    background-image: url(./../css/assets/images/header__images/sort-button-with-three-lines.svg);
+    background-size:cover;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
 }
 
 /*menu*/
@@ -382,7 +404,7 @@ a:hover {
 
 .about {
     background-color: #14826f;
-    height: 800px;       /*это убирать*/
+/* height: 800px;    /*это убирать*/
 }
 
 .about__wrapper{
@@ -660,6 +682,7 @@ a:hover {
     z-index: 1;
 }
 
+/*
 .testimonials__comment::before {
     content:"Sarah A";
     opacity: 0.6;
@@ -671,6 +694,7 @@ a:hover {
     left: 410px;
     z-index: -1;
 }
+*/
 
 .comment__text {
     max-width: 455px;
@@ -720,6 +744,7 @@ a:hover {
     z-index: 3;
 }
 
+/*
 .blog__inner-img::after {
     content: "";
     width: 687px;
@@ -730,6 +755,8 @@ a:hover {
     left: 507px;
     z-index: -2;
 }
+*/
+
 .blog__title {
     margin-bottom: 50px;
 }
@@ -1032,4 +1059,10 @@ a:hover {
     background-repeat:no-repeat;
     width: 13px;
     height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__navigation {
+        display: none;
+    }
 }

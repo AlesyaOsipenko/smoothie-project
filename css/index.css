@@ -769,6 +769,33 @@ button {
     height: 100%;
 }
 
+
+@media (max-width: 360px) {
+    .story {
+        padding: 60px 0px 100px;
+    }
+
+    .story__desc {
+        letter-spacing: -0.9px;
+    }
+
+    .story__title {
+        font-size: 2.75em;
+    }
+
+    .story__inner {
+        margin-right: 0;
+    }
+
+    .story__btn {
+        margin-bottom: 50px;
+    }
+
+    .story__image::after  {
+        display:none;
+    }
+}
+
 /*testimonials*/
 
 .testimonials {

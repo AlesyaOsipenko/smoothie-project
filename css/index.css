@@ -1092,6 +1092,13 @@ button {
     letter-spacing: -0.02em;
 }
 
+@media (max-width: 360px) {
+    .insta__item {
+        min-width: 260px;
+    }
+
+}
+
 /*footer*/
 
 .footer {
@@ -1135,6 +1142,18 @@ button {
     color: #6d450c;
 }
 
+@media (max-width: 360px) {
+    .information {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .footer__top {
+        padding: 65px 0px 55px;
+    }
+}
+
 /*payment*/
 .payment {
     max-width: 270px;
@@ -1154,6 +1173,14 @@ button {
     align-items: center;
     gap: 23px;
 }
+
+@media (max-width: 360px) {
+    .payment {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
+
 
 /*subscribe*/
 .subscribe {
@@ -1237,6 +1264,17 @@ button {
 
 }
 
+@media (max-width: 360px) {
+    .sub-social {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .sub-social-content {
+        width: 240px;
+    }
+}
+
 /*footer__copyright*/
 .footer__copyright {
     background-color: #6c2c1c;
@@ -1295,10 +1333,16 @@ button {
     height: 25px;
 }
 
+@media (max-width: 360px) {
+    .footer__logo {
+        margin-bottom: 60px;
+    }
 
+    .footer__copyright-btn{
+        right: 15px;
+    }
 
-@media screen and (max-width: 780px) {
-    .smoothies__features {
-        max-width: 500px;
+    .footer__copyright-btn::before {
+        display: none;
     }
 }

@@ -464,22 +464,6 @@ button {
     .feature__text--orange {
         font-size: 1.25em;
     }
-
-    .smoothies__feature:nth-child(even) {
-        border-right: 0;
-    }
-
-    .smoothies__feature:nth-child(n+5) {
-        border-bottom: 1px solid #f6edde;
-    }
-
-    .smoothies__feature:last-child {
-        border-bottom:0;
-    }
-
-    .smoothies__feature:nth-last-child(2) {
-        border-bottom:0;
-    }
 }
 
 @media (max-width: 768px) {
@@ -490,6 +474,22 @@ button {
     .smoothies__feature {
         flex-basis: 50%;
     }
+    .smoothies__feature:nth-child(even) {
+        border-right: 0;
+    }
+
+    .smoothies__feature:nth-child(n+5) {
+        border-bottom: 1px solid #f6edde;
+    }
+
+    .smoothies__feature:nth-last-child(2) {
+        border-bottom:0;
+    }
+
+    .smoothies__feature:last-child {
+        border-bottom:0;
+    }
+
 }
 
 

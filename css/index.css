@@ -1016,6 +1016,29 @@ button {
     letter-spacing: 0.2px;
 }
 
+
+@media (max-width: 360px) {
+
+.blog__img {
+    width: 100%;
+}
+
+.blog {
+    padding: 100px 0 100px;
+}
+
+.blog__desc {
+    padding-top: 70px;
+    margin-left: 0px;
+    padding-right: 0px;
+}
+
+.blog__ingridients {
+    padding-left:0;
+    font-size: 1.12em;
+}
+}
+
 /*Instagram*/
 
 .insta__icon {

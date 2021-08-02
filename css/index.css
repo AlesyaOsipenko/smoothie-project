@@ -699,6 +699,18 @@ button {
     right: 33px;
 }
 
+@media (max-width: 360px) {
+
+    .products__subtitle, .products__title {
+        font-size: 1.12em;
+        letter-spacing: -0.1px;
+    }
+
+    .products__img {
+        margin-top: 70px;
+    }
+}
+
 /*our story*/
 
 .story {
@@ -838,7 +850,7 @@ button {
     z-index: 1;
 }
 
-/*
+
 .testimonials__comment::before {
     content:"Sarah A";
     opacity: 0.6;
@@ -850,7 +862,7 @@ button {
     left: 410px;
     z-index: -1;
 }
-*/
+
 
 .comment__text {
     max-width: 455px;
@@ -880,6 +892,45 @@ button {
     width: 160px;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 360px) {
+    .testimonials::after {
+        display: none;
+    }
+
+    .testimonials {
+        padding-top: 60px;
+    }
+
+    .testimonials__title {
+        font-size: 2.75em;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .testimonial__title {
+        margin-bottom: 80px;
+    }
+
+    .testimonials__comment {
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        margin-bottom: 100px;
+    }
+    
+    .comment__text {
+        margin-top: 60px;
+        margin-right: 0;
+    }
+
+    .comment__quote {
+        letter-spacing: 0.4px;
+    }
+
+    .testimonials__comment::before {
+        display:none;
+    }
 }
 
 

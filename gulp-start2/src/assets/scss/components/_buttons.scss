@@ -1,0 +1,44 @@
+.btn {
+    font-family: 'Muli-ExtraBold', sans-serif;
+    color: #ffffff;
+    display: flex;
+    font-size: 21px;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.btn--green-bg {
+    background-color: #0aa566;
+}
+
+.btn--green-bg:hover {
+    background-color: #14774f;
+    color: white;
+}
+
+.btn--green-bg::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 16px;
+    width: 30px;
+    background-image: url("./../images/photoshop-img/yellow-arrow\ btn.png");
+    top: 50%;
+    right: 38px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.btn--green::after {
+    content: "";
+    display: inline-block;
+    background-image: url("./../images/images/photoshop-img/about-Arrow.png");
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    right: 45px;
+}

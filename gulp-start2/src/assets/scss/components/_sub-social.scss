@@ -1,0 +1,40 @@
+.sub-social__link {
+    color: #6d450c;
+    font-family: 'MulI-ExtraBold';
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.sub-social-content {
+    display: flex;
+    width: 258px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.sub-social-content::after {
+    content: "";
+    display: block;
+    background-image: url("./../images/photoshop-img/Arrow.png");
+    position: absolute;
+    left: -25%;
+    top: -15px;
+    width: 48px;
+    height: 43px;
+}
+
+.sub-social {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.sub-social__list {
+    padding: 0;
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+
+}

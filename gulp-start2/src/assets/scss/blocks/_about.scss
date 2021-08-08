@@ -1,97 +1,95 @@
-
 .about {
     background-color: #14826f;
-}
+    $about: &;
 
-.about__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
 
-.about__img {
-    transform: translate(45px, 60px);
-    -webkit-transform: translate(45px, 60px);
-    -moz-transform: translate(45px, 60px);
-    -ms-transform: translate(45px, 60px);
-    -o-transform: translate(45px, 60px);
-}
+        #{$about}__img {
+            transform: translate(45px, 60px);
+            -webkit-transform: translate(45px, 60px);
+            -moz-transform: translate(45px, 60px);
+            -ms-transform: translate(45px, 60px);
+            -o-transform: translate(45px, 60px);
 
-.about__img-left {
-    width: 100%;
-}
+            #{$about}__img-left {
+                width: 100%;
+            }
+        }
 
-.about__info {
-    display: flex;
-    flex-direction: column;
-    margin: 89px 0px 10px 185px;
-}
+        #{$about}__info {
+            display: flex;
+            flex-direction: column;
+            margin: 89px 0px 10px 185px;
 
-.about__title {
-    line-height: 1.09;
-    letter-spacing: -1.1px;
-    font-size: 55px;
-}
+            #{$about}__title {
+                line-height: 1.09;
+                letter-spacing: -1.1px;
+                font-size: 55px;
 
-.about__title-green {
-    color: #cae941;
-    position: relative;
-}
+                #{$about}__title-green {
+                    color: #cae941;
+                    position: relative;
 
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-image: url("./../images/photoshop-img/Line-img.png");
+                        top: 65px;
+                        left: -10px;
+                        width: 450px;
+                        height: 13px;
+                        display: inline-block;
+                    }
+                }
+            }
 
-.about__title-green::after {
-    content: "";
-    position: absolute;
-    background-image: url("./../images/photoshop-img/Line-img.png");
-    top: 65px;
-    left: -10px;
-    width: 450px;
-    height: 13px;
-    display: inline-block;
+            #{$about}__list {
+                color: #fff;
+                font-family: 'Muli-ExtraBold';
+                letter-spacing: normal;
+                padding-left: 0;
+                margin-top: 57px;
 
-}
+                #{$about}__list-item {
+                    list-style: none;
+                    background: url('./../images/photoshop-img/icon1.png') no-repeat 0 4px;
+                    padding-left: 35px;
+                    margin-bottom: 20px;
+                    font-size: 21px;
 
-.about__list {
-    color: #fff;
-    font-family: 'Muli-ExtraBold';
-    letter-spacing: normal;
-    padding-left: 0;
-    margin-top: 57px;
-}
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
 
-.about__list-item {
-    list-style: none;
-    background: url('./../images/photoshop-img/icon1.png') no-repeat 0 4px;
-    padding-left: 35px;
-    margin-bottom: 20px;
-    font-size: 21px;
-}
+            #{$about}__btn {
+                max-width: 380px;
+                height: 60px;
+                border: solid 2px #f8b231;
+                font-size: 21px;
+                position: relative;
+                padding-left: 29px;
+                margin: 50px 0 94px;
 
-.about__list-item:last-child {
-    margin: 0;
-}
-
-.about__btn {
-    max-width: 380px;
-    height: 60px;
-    border: solid 2px #f8b231;
-    font-size: 21px;
-    position: relative;
-    padding-left: 29px;
-    margin: 50px 0 94px;
-}
-
-.about__btn::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    background-image: url("./../images/photoshop-img/about-Arrow.png");
-    width: 30px;
-    height: 16px;
-    top: 50%;
-    right: 35px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);    
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    background-image: url("./../images/photoshop-img/about-Arrow.png");
+                    width: 30px;
+                    height: 16px;
+                    top: 50%;
+                    right: 35px;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                }
+            }
+        }
+    }
 }

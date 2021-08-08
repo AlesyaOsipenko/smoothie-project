@@ -1,51 +1,55 @@
+.insta {
 
-.insta__icon {
-    padding-right: 12px;
-}
+    &__icon {
+        padding-right: 12px;
+    }
 
-.insta__wrapper {
-    margin: 50px 0px 10px;
-    display: flex;
-    overflow-x: auto;
-}
+    &__wrapper {
+        margin: 50px 0px 10px;
+        display: flex;
+        overflow-x: auto;
+    }
 
-.insta__item {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 20%;
-    min-width: 340px;
-    position: relative;
-}
+    &__item {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 20%;
+        min-width: 340px;
+        position: relative;
+    }
 
-.insta__item::before {
-    content: "";
-    display: block;
-    background-image: url("./../images/photoshop-img/Shadow.png");
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 13px;
-    height: 13px;
-}
+    &__item {
+        &::before {
+            content: "";
+            display: block;
+            background-image: url("./../images/photoshop-img/Shadow.png");
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 13px;
+            height: 13px;
+        }
 
-.insta__item::after {
-    content: "";
-    display: block;
-    background-image: url("./../images/photoshop-img/insticon.png");
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    right: 22px;
-    bottom: 20px;
-}
+        &::after {
+            content: "";
+            display: block;
+            background-image: url("./../images/photoshop-img/insticon.png");
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            right: 22px;
+            bottom: 20px;
+        }
+    }
 
-.insta__link {
-    font-family: 'Muli-ExtraBold';
-    font-size: 24px;
-    color: #0aa566;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 40px;
-    letter-spacing: -0.02em;
+    &__link {
+        font-family: 'Muli-ExtraBold';
+        font-size: 24px;
+        color: #0aa566;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+    }
 }

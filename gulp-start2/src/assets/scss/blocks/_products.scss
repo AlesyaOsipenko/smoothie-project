@@ -1,68 +1,69 @@
-
 .products {
+    $products: &;
     overflow-y: auto;
-}
 
-.products__wrapper {
-    display: flex;
-}
+    &__wrapper {
+        display: flex;
 
-.products__img {
-    margin-top: 125px;
-}
+        #{$products}__card {
+            flex: 1 0 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-.products__card {
-    flex: 1 0 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+            &:first-child {
+                background-color: #632b17;
+            }
 
-.products div:first-child {
-    background-color: #632b17;
-}
+            &:nth-child(2) {
+                background-color: #178670;
+            }
 
-.products div:nth-child(2) {
-    background-color: #178670;
-}
+            &:nth-child(3) {
+                background-color: #f7ae3b;
+            }
 
-.products div:nth-child(3) {
-    background-color: #f7ae3b;
-}
+            &:nth-child(4) {
+                background-color: #c3471b;
+            }
 
-.products div:nth-child(4) {
-    background-color: #c3471b;
-}
+            #{$products}__img {
+                margin-top: 125px;
+            }
 
-.products__title {
-    font-family: 'Muli-Bold';
-    margin-top: 33px;
-    line-height: 22px;
-    font-size: 25px;
-}
+            #{$products}__title {
+                font-family: 'Muli-Bold';
+                margin-top: 33px;
+                line-height: 22px;
+                font-size: 25px;
+            }
 
-.products__subtitle {
-    color: #fff;
-    font-family: 'Muli-Italic';
-    font-size: 21px;
-    margin-top: 10px;
-}
+            #{$products}__subtitle {
+                color: #fff;
+                font-family: 'Muli-Italic';
+                font-size: 21px;
+                margin-top: 10px;
+            }
 
-.products__btn {
-    width: 204px;
-    height: 60px;
-    border: solid 2px #ffffff;
-    margin: 65px 0px 79px;
-    padding-left: 36px;
-    position: relative;
-}
+            #{$products}__btn {
+                width: 204px;
+                height: 60px;
+                border: solid 2px #ffffff;
+                margin: 65px 0px 79px;
+                padding-left: 36px;
+                position: relative;
 
-.products__btn::after {
-    content: "";
-    display: inline-block;
-    background-image: url("./../images/photoshop-img/products-arrow.png");
-    position: absolute;
-    width: 30px;
-    height: 16px;
-    right: 33px;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-image: url("./../images/photoshop-img/products-arrow.png");
+                    position: absolute;
+                    width: 30px;
+                    height: 16px;
+                    right: 33px;
+                }
+            }
+
+        }
+    }
 }

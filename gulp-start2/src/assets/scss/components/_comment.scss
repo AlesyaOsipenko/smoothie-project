@@ -1,0 +1,24 @@
+.comment {
+
+    &__text {
+        max-width: 455px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 60px 0 0;
+    }
+    
+    &__quote {
+        line-height: 35px;
+        letter-spacing: 0.9px;
+    }
+    
+    &__cite {
+        font-family: 'Muli-Semi-BoldItalic';
+        line-height: 45px;
+    }
+    
+    &__avatar {
+        object-fit: cover;
+    }
+}

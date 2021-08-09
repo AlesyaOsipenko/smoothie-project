@@ -7,8 +7,7 @@
     background-size: cover;
     background-attachment: fixed;
 
-
-    &__top {
+    #{$header}__top {
         padding: 88px 0 124px;
         position: relative;
 
@@ -30,6 +29,26 @@
             align-items: center;
         }
 
+        #{$header}__right-block {
+            display: flex;
+            column-gap: 135px;
+            align-items: center;
+            #{$header}__personal {
+                position: relative;
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    height: 2px;
+                    width: 50px;
+                    background-color: #ffd68f;
+                    position: absolute;
+                    top: 50%;
+                    left: 130%;
+                }
+
+            }
+        }
+
         #{$header}__logo {
             position: absolute;
             top: 70px;
@@ -47,7 +66,7 @@
 
         #{$header}__right-block {
             display: flex;
-            column-gap: 136px;
+            column-gap: 135px;
             align-items: center;
 
             #{$header}__personal {
@@ -72,8 +91,8 @@
         justify-content: center;
 
         #{$header}__btn {
-            border-radius: 35px;
-            font-family: 'Muli-ExtraBold', sans-serif;
+            border-radius: $borderRadius;
+            font-family: $titleFont, sans-serif;
             color: #ffffff;
             display: flex;
             align-items: center;
@@ -84,10 +103,10 @@
             letter-spacing: -0.48px;
             padding: 0 38px;
             position: relative;
-            -webkit-border-radius: 35px;
-            -moz-border-radius: 35px;
-            -ms-border-radius: 35px;
-            -o-border-radius: 35px;
-        }
+            -webkit-border-radius: $borderRadius;
+            -moz-border-radius: $borderRadius;
+            -ms-border-radius: $borderRadius;
+            -o-border-radius: $borderRadius;
+}
     }
 }

@@ -47,7 +47,7 @@
 
             #{$about}__list {
                 color: #fff;
-                font-family: 'Muli-ExtraBold';
+                font-family: 'Muli-Regular';
                 letter-spacing: normal;
                 padding-left: 0;
                 margin-top: 57px;
@@ -61,6 +61,10 @@
 
                     &:last-child {
                         margin: 0;
+                    }
+
+                    #{$about}--bold {
+                        font-family:$titleFont;
                     }
                 }
             }

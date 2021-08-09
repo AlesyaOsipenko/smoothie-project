@@ -4,7 +4,7 @@
 
     &__top {
         padding: 60px 0 80px;
-        background-color: #f6ab3b;
+        background-color: $primary;
 
         #{$footer}__top-content {
             display: flex;
@@ -19,7 +19,7 @@
                 margin: 0 155px 0 295px;
 
                 #{$footer}__title {
-                    font-family: 'MulI-ExtraBold';
+                    font-family: $titleFont;
                     font-size: 26px;
                     margin-bottom: 30px;
                     line-height: 40px;
@@ -41,7 +41,7 @@
                 margin-right: 140px;
 
                 #{$footer}__title {
-                    font-family: 'MulI-ExtraBold';
+                    font-family: $titleFont;
                     font-size: 26px;
                     margin-bottom: 30px;
                     line-height: 40px;
@@ -66,7 +66,7 @@
                 width: 495px;
 
                 #{$footer}__title {
-                    font-family: 'MulI-ExtraBold';
+                    font-family: $titleFont;
                     font-size: 26px;
                     margin-bottom: 30px;
                     line-height: 40px;
@@ -108,7 +108,7 @@
         }
     }
 
-    &__copyright {
+    #{$footer}__copyright {
         background-color: #6c2c1c;
         height: 60px;
         display: flex;
@@ -119,43 +119,47 @@
             color: #af8a82;
             font-size: 13px;
         }
+    }
         #{$footer}__copyright-btn {
-            right: 101px;
-            width: 50px;
-            height: 50px;
-            border: 0;
-            border-radius: 5px;
-            position: fixed;
-            bottom: 45px;
-            background-color: #f2662f;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 99999;
+        right: 101px;
+        width: 50px;
+        height: 50px;
+        border:0;
+        border-radius:5px;
+        position: fixed;
+        bottom:45px;
+        background-color: #f2662f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        -ms-border-radius:5px;
+        -o-border-radius:5px;
 
-            &:hover {
-                background-color: #b44113;
-            }
+        &:hover {
+            background-color: #b44113;
+        }
 
-            &::before {
-                content: "Go top";
-                color: #fff;
-                font-family: 'Muli-Bold';
-                font-size: 16px;
-                bottom: -20px;
-                font-size: 16px;
-                position: absolute;
-                left: -65px;
-            }
+        &::before {
+            content: "Go top";
+            color: #fff;
+            font-family: 'Muli-Bold';
+            font-size: 16px;
+            bottom: -20px;
+            font-size: 16px;
+            position: absolute;
+            left: -65px;
+        }
 
-            &::after {
-                content: "";
-                display: block;
-                background-image: url('./../images/photoshop-img/go-top-icon.png');
-                background-repeat: no-repeat;
-                width: 13px;
-                height: 25px;
-            }
+        &::after {
+            content: "";
+            display: block;
+            background-image: url('./../images/photoshop-img/go-top-icon.png');
+            background-repeat: no-repeat;
+            width: 13px;
+            height: 25px;
         }
     }
 }

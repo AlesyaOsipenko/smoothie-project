@@ -1,20 +1,13 @@
 .btn {
-    font-family: 'Muli-ExtraBold', sans-serif;
-    color: #ffffff;
-    display: flex;
-    font-size: 21px;
-    text-decoration: none;
-    align-items: center;
-    border-radius: 30px;
-
+    @extend %btn;
     &--green-bg {
         background-color: $secondary;
     }
 
     &--green-bg {
         &:hover {
-            background-color: #14774f;
-            color: white;
+            background-color: $darker-color;
+            color: $textColor;
         }
     }
 

@@ -9,6 +9,7 @@
 
         #{$blog}__title {
             margin-bottom: 50px;
+            @extend %title;
         }
 
         #{$blog}__inner-img {
@@ -27,8 +28,7 @@
         }
 
         #{$blog}__desc {
-            display: flex;
-            flex-direction: column;
+            @include flex (flex, column);
             padding-top: 230px;
             margin-left: 70px;
             padding-right: 23px;
@@ -42,7 +42,9 @@
             }
 
             #{$blog}__desc-date {
-                margin: 0px 0px 20px;
+                padding-top: 20px;
+                font-size: 16px;
+                font-family: 'Muli-Regular';
             }
 
             #{$blog}__ingridients {
@@ -50,24 +52,28 @@
                 padding-left: 45px;
                 margin-top: 45px;
                 line-height: 35px;
-                letter-spacing: 0.2px;
-            }
+                letter-spacing: -0.8px;;
 
-            #{$blog}__span {
-                font-family: $titleFont;
-                font-size: 18px;
-                font-style: italic;
-                position: relative;
+                #{$blog}__text {
+                    @extend %text;
+                }
 
-                &::after {
-                    content: "";
-                    display: inline-block;
-                    background-image: url("./../images/photoshop-img/blog-arrow.png");
-                    position: absolute;
-                    width: 18px;
-                    height: 10px;
-                    top: 35%;
-                    right: -30px;
+                #{$blog}__span {
+                    font-family: $titleFont;
+                    font-size: 18px;
+                    font-style: italic;
+                    position: relative;
+    
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        background-image: url("./../images/photoshop-img/blog-arrow.png");
+                        position: absolute;
+                        width: 18px;
+                        height: 10px;
+                        top: 35%;
+                        right: -30px;
+                    }
                 }
             }
         }

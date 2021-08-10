@@ -2,9 +2,8 @@
     padding: 90px 0 135px;
 
     &__inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (flex, column, center);
+        
     }
 
     &__title {
@@ -12,10 +11,11 @@
         text-align: center;
         font-size: 50px;
         letter-spacing: -1px;
+        @extend %title;
     }
 
     &__text {
-        font-size: 18px;
+        @extend %text;
         max-width: 915px;
         margin: 0 0 60px;
         text-align: center;
@@ -29,9 +29,7 @@
     }
 
     &__feature {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (flex, column, center);
         justify-content: center;
         height: 180px;
         margin: 0;

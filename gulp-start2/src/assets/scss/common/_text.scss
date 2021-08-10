@@ -1,17 +1,11 @@
 .text {
-    font-family: 'Muli-Regular';
-    line-height: 35px;
-
     &--black {
         color: #1e1e1e;
     }
 
-
     &--white {
-        color: #ffffff;
-    &:hover {
-            color: #6c2c1c;
-        }
+        color: $textColor;
+        @include hov1;
     }
 
     &--orange {

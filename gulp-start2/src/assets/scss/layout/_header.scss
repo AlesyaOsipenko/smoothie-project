@@ -24,15 +24,13 @@
         }
 
         #{$header}__navigation {
-            display: flex;
+            @include flex (flex, center);
             justify-content: space-between;
-            align-items: center;
         }
 
         #{$header}__right-block {
-            display: flex;
+            @include flex (flex, center);
             column-gap: 135px;
-            align-items: center;
             #{$header}__personal {
                 position: relative;
                 &::after {
@@ -65,10 +63,9 @@
         display: none;
 
         #{$header}__right-block {
-            display: flex;
+            @include flex (flex, center);
             column-gap: 135px;
-            align-items: center;
-
+            
             #{$header}__personal {
                 position: relative;
 

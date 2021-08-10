@@ -1,6 +1,7 @@
 @import "./abstracts/vars";
 @import "./abstracts/normalize";
 @import "./abstracts/fonts";
+@import "./abstracts/mixins";
 @import "./layout/header";
 @import "./components/menu";
 @import "./components/personal";
@@ -10,7 +11,6 @@
 @import "./components/comment";
 @import "./common/container";
 @import "./common/text";
-@import "./common/title";
 @import "./blocks/smoothies";
 @import "./blocks/about";
 @import "./blocks/products";

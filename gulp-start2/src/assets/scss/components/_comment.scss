@@ -10,8 +10,8 @@
     
     &__quote {
         line-height: 35px;
-        letter-spacing: 0.9px;
-        color: #ffffff;
+        color: $textColor;
+        @extend %text;
     }
     
     &__cite {

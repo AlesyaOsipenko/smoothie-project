@@ -19,14 +19,14 @@
         }
 
         #{$about}__info {
-            display: flex;
-            flex-direction: column;
+            @include flex (flex, column);
             margin: 89px 0px 10px 185px;
 
             #{$about}__title {
                 line-height: 1.09;
                 letter-spacing: -1.1px;
                 font-size: 55px;
+                @extend %title;
 
                 #{$about}__title-green {
                     color: #cae941;
@@ -71,6 +71,7 @@
 
             #{$about}__btn {
                 max-width: 380px;
+                width: 100%;
                 height: 60px;
                 border: solid 2px #f8b231;
                 font-size: 21px;

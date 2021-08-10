@@ -16,13 +16,11 @@
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        @include flex (flex, column, center);
 
         #{$testimonials}__title {
             margin: 0px 0 120px;
+            @extend %title;
 
             #{$testimonials} span {
                 color: #f2612d;

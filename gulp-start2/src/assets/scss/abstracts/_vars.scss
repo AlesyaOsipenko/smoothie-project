@@ -1,5 +1,28 @@
 $primary: #f6ab3b;
 $secondary: #0aa566;
+$darker-color: darken($secondary, 10%);
 $borderRadius: 35px;
 $featureColor: #f2612d;
 $titleFont: 'Muli-ExtraBold';
+$textColor: #fff;
+
+%btn {
+    font-family: 'Muli-ExtraBold', sans-serif;
+    color: #ffffff;
+    display: flex;
+    font-size: 21px;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 30px;
+}
+
+%title {
+    font-family: "Muli-ExtraBold";
+    font-size: 50px;
+}
+
+%text {
+    font-family: 'Muli-Regular';
+    line-height: 35px;
+    font-size: 18px;
+}

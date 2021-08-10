@@ -50,9 +50,8 @@
 
                 #{$footer}__payment-container {
                     max-width: 275px;
-                    display: flex;
+                    @include flex (flex, center);
                     flex-wrap: wrap;
-                    align-items: center;
                     gap: 23px;
 
                     #{$footer}__payment-img {
@@ -112,8 +111,8 @@
         background-color: #6c2c1c;
         height: 60px;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         #{$footer}__copyright-text {
             font-family: 'Muli-Regular';
             color: #af8a82;

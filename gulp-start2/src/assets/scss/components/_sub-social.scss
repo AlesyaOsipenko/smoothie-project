@@ -3,6 +3,12 @@
     justify-content: flex-end;
     margin-right: 50px;
     margin-top: 40px;
+    @media screen and (max-width: 360px) {
+        margin: {
+            right: 0;
+            bottom: 30px;
+        }
+    }
 
     &__content {
         display: flex;
@@ -10,6 +16,9 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
+        @media screen and (max-width: 360px) {
+            width: 240px;
+        }
     }
 
     &__content {

@@ -15,14 +15,18 @@
         flex: 1 0 20%;
         min-width: 340px;
         position: relative;
+        @media screen and  (max-width: 360px) {
+            min-width: 260px;
+        }
+        @media screen and (max-width: 768px) {
+            min-width: 375px;
+        }
     }
 
     &__item {
         &::before {
-            content: "";
-            display: block;
+            @include pseudo (block,absolute);
             background-image: url("./../images/photoshop-img/Shadow.png");
-            position: absolute;
             bottom: 0;
             right: 0;
             width: 13px;
@@ -30,10 +34,8 @@
         }
 
         &::after {
-            content: "";
-            display: block;
+            @include pseudo (block,absolute);
             background-image: url("./../images/photoshop-img/insticon.png");
-            position: absolute;
             width: 26px;
             height: 26px;
             right: 22px;

@@ -4,12 +4,18 @@
 
 @mixin hov1 {
     &:hover {
-        color: #6c2c1c;
+        color: #f0c8bf;
     }
 }
 
-@mixin flex ($flex, $direction, $align: flex-start) {
+@mixin flex ($flex, $direction: row, $align: flex-start) {
     display: $flex;
     flex-direction: $direction;
     align-items: $align;
+}
+
+@mixin pseudo ($display: block, $pos: absolute, $content: '') {
+    display: $display;
+    position: $pos;
+    content: $content;
 }

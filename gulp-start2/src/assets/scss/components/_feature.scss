@@ -12,5 +12,17 @@
         text-align: center;
         color: $featureColor;
         font-size: 25px;
+        &:hover {
+            transform: scale(1.5);
+            transition: 1s;
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+}
     }
 }

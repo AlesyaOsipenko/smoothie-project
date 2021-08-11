@@ -6,6 +6,10 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    @media screen and (max-width: 360px) {
+        background-attachment: none;
+    }
+
 
     #{$header}__top {
         padding: 88px 0 124px;
@@ -21,25 +25,34 @@
             right: 30px;
             display: none;
             z-index: 1000000;
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
         }
 
         #{$header}__navigation {
-            @include flex (flex, center);
+            display:flex;
+            align-items:center;
             justify-content: space-between;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
         }
 
         #{$header}__right-block {
-            @include flex (flex, center);
+            display:flex;
+            align-items:center;
             column-gap: 135px;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 130px;
+            }
             #{$header}__personal {
                 position: relative;
                 &::after {
-                    content: "";
-                    display: inline-block;
+                    @include pseudo (inline-block,absolute);
                     height: 2px;
                     width: 50px;
                     background-color: #ffd68f;
-                    position: absolute;
                     top: 50%;
                     left: 130%;
                 }
@@ -70,12 +83,10 @@
                 position: relative;
 
                 &::after {
-                    content: "";
-                    display: inline-block;
+                    @include pseudo (inline-block, absolute);
                     height: 2px;
                     width: 50px;
                     background-color: #ffd68f;
-                    position: absolute;
                     top: 50%;
                     left: 130%;
                 }
@@ -86,11 +97,14 @@
     #{$header}-content {
         display: flex;
         justify-content: center;
+        @media screen and (max-width: 360px) {
+            margin-top: 80px;
+        }
 
         #{$header}__btn {
             border-radius: $borderRadius;
             font-family: $titleFont, sans-serif;
-            color: #ffffff;
+            color: $textColor;
             display: flex;
             align-items: center;
             height: 70px;

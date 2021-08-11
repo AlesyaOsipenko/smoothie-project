@@ -3,6 +3,9 @@
         display: flex;
         align-items: center;
         column-gap: 35px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
 
         &:first-child {
             padding: 0;
@@ -10,6 +13,9 @@
     }
 
     &__item {
+        @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -21,6 +27,5 @@
         font-size: 1em;
         font-family: 'MuliBold', sans-serif;
         color: $textColor;
-
     }
 }

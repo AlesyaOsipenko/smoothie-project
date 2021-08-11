@@ -1,6 +1,9 @@
 .story {
     $story: &;
     padding: 120px 0px 160px;
+    @media screen and  (max-width: 360px) {
+        padding: 60px 0px 100px;
+    }
 
     &__wrapper {
         display: flex;
@@ -12,12 +15,22 @@
             flex-direction: column;
             justify-content: center;
             margin-right: 206px;
+            @media screen and  (max-width: 768px) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            @media screen and  (max-width: 1338px) {
+                margin-bottom: 50px;
+            }
 
             #{$story}__title {
                 margin-bottom: 35px;
                 line-height: 40px;
                 letter-spacing: -0.02em;
                 @extend %title;
+                @media screen and  (max-width: 360px) {
+                    font-size: 2.75em;
+                }
             }
 
             #{$story}__desc {
@@ -25,6 +38,9 @@
                 line-height: 35px;
                 letter-spacing: -0.1px;
                 @extend %text;
+                @media screen and  (max-width: 360px) {
+                    letter-spacing: -0.9px;
+                }
             }
 
             #{$story}__btn {
@@ -33,6 +49,9 @@
                 margin-top: 60px;
                 padding-left: 25px;
                 position: relative;
+                @media screen and  (max-width: 768px) {
+                    margin-bottom: 50px;
+                }
             }
         }
 
@@ -40,14 +59,15 @@
             position: relative;
 
             &::after {
-                content: "";
-                display: block;
-                position: absolute;
+                @include pseudo (block,absolute);
                 background-image: url("./../images/photoshop-img/story-stamp.png");
                 width: 290px;
                 height: 216px;
                 top: 22px;
                 left: -167px;
+                @media screen and  (max-width: 768px) {
+                    display: none;
+                }
             }
 
             #{$story}__pic {

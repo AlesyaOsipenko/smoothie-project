@@ -40,11 +40,41 @@ li {
 button {
   border:none;
   font-family: inherit;
+  background-color: transparent;
+}
+
+button:hover {
+  transform: translateY(5px);
+  transition: .5s;
+  color: #0aa566;
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
 }
 
 a {
   text-decoration: none;
   color:inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #965807;
+  transition: .5s;
+  transform: scale(1) translateY(-5px);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transform: scale(1) translateY(-5px);
+  -moz-transform: scale(1) translateY(-5px);
+  -ms-transform: scale(1) translateY(-5px);
+  -o-transform: scale(1) translateY(-5px);
 }
 /* Sections
    ========================================================================== */
@@ -180,6 +210,7 @@ sup {
 
 img {
   border-style: none;
+  object-fit: cover;
 }
 
 /* Forms

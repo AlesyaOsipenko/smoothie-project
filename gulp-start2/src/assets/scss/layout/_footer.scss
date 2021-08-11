@@ -5,18 +5,58 @@
     &__top {
         padding: 60px 0 80px;
         background-color: $primary;
+        @media screen and (max-width: 360px) {
+            padding: 65px 0px 55px;
+        }
 
         #{$footer}__top-content {
             display: flex;
             flex-wrap: wrap;
+            @media screen and (max-width: 1758px) {
+                align-items: center;
+                justify-content: center;
+            }
 
             #{$footer}__logo {
                 align-self: center;
+                @media screen and  (max-width: 360px) {
+                    margin-bottom: 60px;
+                }
+                @media screen and (max-width: 1758px) {
+                    align-self: none;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 50px;
+                }
             }
 
             #{$footer}__information {
                 max-width: 159px;
                 margin: 0 155px 0 295px;
+                @media screen and (max-width: 360px) {
+                    margin: {
+                        right: 0;
+                        left:0;
+                        bottom: 50px;
+                    }
+                }
+                @media screen and  (max-width: 768px) {
+                    margin: {
+                        top: 0;
+                        right: 75px;
+                        bottom:0;
+                        left: 75px;
+                    } 
+                }
+
+                @media screen and (max-width: 1051px) {
+                    margin: 0 235px 0 200px;
+                }
+
+                @media screen and  (max-width: 1544px) {
+                    padding-bottom:50px;
+                }
 
                 #{$footer}__title {
                     font-family: $titleFont;
@@ -24,6 +64,9 @@
                     margin-bottom: 30px;
                     line-height: 40px;
                     letter-spacing: -0.02em;
+                    @media screen and (max-width: 1758px) {
+                        margin-top: 50px;
+                    }
                 }
 
                 #{$footer}__information-link {
@@ -39,6 +82,18 @@
             #{$footer}__payment {
                 max-width: 270px;
                 margin-right: 140px;
+                @media screen and (max-width: 360px) {
+                    margin: {
+                        right: 0;
+                        bottom: 50px;
+                    }
+                }
+                @media screen and  (max-width: 768px) {
+                    margin: {
+                        right: 0;
+                        bottom: 100px;
+                    }
+                }
 
                 #{$footer}__title {
                     font-family: $titleFont;
@@ -136,25 +191,32 @@
         -moz-border-radius:5px;
         -ms-border-radius:5px;
         -o-border-radius:5px;
+        @media screen and  (max-width: 360px) {
+            right: 15px;
+        }
+        @media screen and (max-width: 1758px) {
+            right: 15px;
+        }
 
         &:hover {
             background-color: #b44113;
         }
 
         &::before {
-            content: "Go top";
-            color: #fff;
+            @include pseudo (inline-block,absolute,"Go top");
+            color: $textColor;
             font-family: 'Muli-Bold';
             font-size: 16px;
             bottom: -20px;
             font-size: 16px;
-            position: absolute;
             left: -65px;
+            @media screen and  (max-width: 360px) {
+                display: none;
+            }
         }
 
         &::after {
-            content: "";
-            display: block;
+            @include pseudo (block,absolute,"");
             background-image: url('./../images/photoshop-img/go-top-icon.png');
             background-repeat: no-repeat;
             width: 13px;

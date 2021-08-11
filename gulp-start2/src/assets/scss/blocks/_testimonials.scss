@@ -3,16 +3,20 @@
     background-color: #672f1b;
     padding: 105px 0 70px;
     position: relative;
+    @media screen and (max-width: 360px) {
+        padding-top: 60px;
+    }
 
     &::after {
-        content: "";
-        display: block;
-        position: absolute;
+        @include pseudo (block,absolute);
         background-image: url("./../images/photoshop-img/dots-img.png");
         width: 410px;
         height: 301px;
         top: -85px;
         right: 58px;
+        @media screen and (max-width: 1120px) {
+            display: none;
+        }
     }
 
     &__content {
@@ -21,6 +25,14 @@
         #{$testimonials}__title {
             margin: 0px 0 120px;
             @extend %title;
+            @media screen and (max-width: 360px) {
+                font-size: 2.75em;
+                margin-bottom: 0px;
+            }
+            @media screen and (max-width: 768px) {
+                margin-bottom: 80px;
+                text-align: center;
+            }
 
             #{$testimonials} span {
                 color: #f2612d;
@@ -34,20 +46,31 @@
             align-items: center;
             margin-bottom: 120px;
             z-index: 1;
+            @media screen and (max-width: 768px) {
+                flex-wrap: wrap;
+                flex-flow: column-reverse;
+                margin-bottom: 100px;
+            }
+
 
             &::before {
-                content: "Sarah A";
+                @include pseudo (inline-block,absolute,"Sarah A");
                 opacity: 0.6;
                 font-family: $titleFont;
                 font-size: 200px;
                 color: rgba(82, 25, 5, 0.6);
-                position: absolute;
                 transform: translate(-19%, -23%);
                 z-index: -1;
                 -webkit-transform: translate(-19%, -23%);
                 -moz-transform: translate(-19%, -23%);
                 -ms-transform: translate(-19%, -23%);
                 -o-transform: translate(-19%, -23%);
+                @media screen and (max-width: 360px) {
+                    display: none;
+                }
+                @media screen and (min-width: 360px) and (max-width:1120px) {
+                    display: none;
+                }
             }
         }
 

@@ -8,6 +8,10 @@
         #{$products}__card {
             flex: 1 0 300px;
             @include flex (flex, column, center);
+            @media screen and  (max-width: 768px) {
+                flex: 1 0 480px;
+            }
+
 
             &:first-child {
                 background-color: #632b17;
@@ -27,6 +31,9 @@
 
             #{$products}__img {
                 margin-top: 125px;
+                @media screen and  (max-width: 360px) {
+                    margin-top: 70px;
+                }
             }
 
             #{$products}__title {
@@ -34,6 +41,13 @@
                 margin-top: 33px;
                 line-height: 22px;
                 font-size: 25px;
+                @media screen and  (max-width: 360px) {
+                    font-size: 1.12em;
+                    letter-spacing: -0.1px;
+                }
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }
             }
 
             #{$products}__subtitle {
@@ -41,6 +55,10 @@
                 font-family: 'Muli-Italic';
                 font-size: 21px;
                 margin-top: 10px;
+                @media screen and  (max-width: 360px) {
+                    font-size: 1.12em;
+                    letter-spacing: -0.1px;
+                }
             }
 
             #{$products}__btn {
@@ -52,10 +70,8 @@
                 position: relative;
 
                 &::after {
-                    content: "";
-                    display: inline-block;
+                    @include pseudo (inline-block,absolute);
                     background-image: url("./../images/photoshop-img/products-arrow.png");
-                    position: absolute;
                     width: 30px;
                     height: 16px;
                     right: 33px;

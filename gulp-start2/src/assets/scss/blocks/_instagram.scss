@@ -11,13 +11,16 @@
     }
 
     &__item {
-        @include flex (flex, column);
+        display: flex;
+        flex-direction: column;
         flex: 1 0 20%;
         min-width: 340px;
         position: relative;
-        @media screen and  (max-width: 360px) {
+
+        @media screen and (max-width: 360px) {
             min-width: 260px;
         }
+
         @media screen and (max-width: 768px) {
             min-width: 375px;
         }
@@ -25,7 +28,7 @@
 
     &__item {
         &::before {
-            @include pseudo (block,absolute);
+            @include pseudo (block, absolute);
             background-image: url("./../images/photoshop-img/Shadow.png");
             bottom: 0;
             right: 0;
@@ -34,12 +37,27 @@
         }
 
         &::after {
-            @include pseudo (block,absolute);
+            @include pseudo (block, absolute);
             background-image: url("./../images/photoshop-img/insticon.png");
             width: 26px;
             height: 26px;
             right: 22px;
             bottom: 20px;
+        }
+
+        &:hover {
+            animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+        @keyframes shadow-drop-center {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.60);
+            }
         }
     }
 

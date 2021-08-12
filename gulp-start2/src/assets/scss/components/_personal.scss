@@ -6,12 +6,25 @@
         align-items: center;
         gap: 45px;
 
+
         &:last-child {
             position: relative;
         }
     }
 
     &__list-item {
+        &:hover {
+            transform: translateY(-5px);
+            transition: 1s;
+            -webkit-transform: translateY(-5px);
+            -moz-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            -o-transform: translateY(-5px);
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+}
         &:last-child {
             margin-right: 0;
         }

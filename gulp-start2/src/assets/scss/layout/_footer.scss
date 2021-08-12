@@ -5,6 +5,7 @@
     &__top {
         padding: 60px 0 80px;
         background-color: $primary;
+
         @media screen and (max-width: 360px) {
             padding: 65px 0px 55px;
         }
@@ -12,6 +13,7 @@
         #{$footer}__top-content {
             display: flex;
             flex-wrap: wrap;
+
             @media screen and (max-width: 1758px) {
                 align-items: center;
                 justify-content: center;
@@ -19,9 +21,11 @@
 
             #{$footer}__logo {
                 align-self: center;
-                @media screen and  (max-width: 360px) {
+
+                @media screen and (max-width: 360px) {
                     margin-bottom: 60px;
                 }
+
                 @media screen and (max-width: 1758px) {
                     align-self: none;
                     width: 100%;
@@ -34,28 +38,30 @@
             #{$footer}__information {
                 max-width: 159px;
                 margin: 0 155px 0 295px;
+
                 @media screen and (max-width: 360px) {
                     margin: {
                         right: 0;
-                        left:0;
+                        left: 0;
                         bottom: 50px;
                     }
                 }
-                @media screen and  (max-width: 768px) {
+
+                @media screen and (max-width: 768px) {
                     margin: {
                         top: 0;
                         right: 75px;
-                        bottom:0;
+                        bottom: 0;
                         left: 75px;
-                    } 
+                    }
                 }
 
                 @media screen and (max-width: 1051px) {
                     margin: 0 235px 0 200px;
                 }
 
-                @media screen and  (max-width: 1544px) {
-                    padding-bottom:50px;
+                @media screen and (max-width: 1544px) {
+                    padding-bottom: 50px;
                 }
 
                 #{$footer}__title {
@@ -64,17 +70,36 @@
                     margin-bottom: 30px;
                     line-height: 40px;
                     letter-spacing: -0.02em;
+
                     @media screen and (max-width: 1758px) {
                         margin-top: 50px;
                     }
                 }
 
-                #{$footer}__information-link {
-                    font-family: 'Muli-Bold';
-                    font-size: 18px;
-                    line-height: 1.94;
-                    letter-spacing: -0.36px;
-                    color: #6d450c;
+                #{$footer}__information-item {
+                    &:hover {
+                        animation: slide-right 3s linear both;
+                        -webkit-animation: slide-right 3s linear both;
+}
+
+
+                    #{$footer}__information-link {
+                        font-family: 'Muli-Bold';
+                        font-size: 18px;
+                        line-height: 1.94;
+                        letter-spacing: -0.36px;
+                        color: #6d450c;
+                    }
+                }
+
+                @keyframes slide-right {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(100px);
+                    }
                 }
             }
 
@@ -82,13 +107,15 @@
             #{$footer}__payment {
                 max-width: 270px;
                 margin-right: 140px;
+
                 @media screen and (max-width: 360px) {
                     margin: {
                         right: 0;
                         bottom: 50px;
                     }
                 }
-                @media screen and  (max-width: 768px) {
+
+                @media screen and (max-width: 768px) {
                     margin: {
                         right: 0;
                         bottom: 100px;
@@ -130,6 +157,7 @@
                 #{$footer}__subscribe-form {
                     position: relative;
 
+
                     &::after {
                         content: "";
                         display: block;
@@ -153,6 +181,10 @@
                         font-size: 17px;
                         padding-left: 63px;
 
+                        &:hover {
+                            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                        }
+
                         &:focus {
                             outline: none;
                         }
@@ -168,32 +200,36 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         #{$footer}__copyright-text {
             font-family: 'Muli-Regular';
             color: #af8a82;
             font-size: 13px;
         }
     }
-        #{$footer}__copyright-btn {
+
+    #{$footer}__copyright-btn {
         right: 101px;
         width: 50px;
         height: 50px;
-        border:0;
-        border-radius:5px;
+        border: 0;
+        border-radius: 5px;
         position: fixed;
-        bottom:45px;
+        bottom: 45px;
         background-color: #f2662f;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 99999;
-        -webkit-border-radius:5px;
-        -moz-border-radius:5px;
-        -ms-border-radius:5px;
-        -o-border-radius:5px;
-        @media screen and  (max-width: 360px) {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        @media screen and (max-width: 360px) {
             right: 15px;
         }
+
         @media screen and (max-width: 1758px) {
             right: 15px;
         }
@@ -203,20 +239,21 @@
         }
 
         &::before {
-            @include pseudo (inline-block,absolute,"Go top");
+            @include pseudo (inline-block, absolute, "Go top");
             color: $textColor;
             font-family: 'Muli-Bold';
             font-size: 16px;
             bottom: -20px;
             font-size: 16px;
             left: -65px;
-            @media screen and  (max-width: 360px) {
+
+            @media screen and (max-width: 360px) {
                 display: none;
             }
         }
 
         &::after {
-            @include pseudo (block,absolute,"");
+            @include pseudo (block, absolute, "");
             background-image: url('./../images/photoshop-img/go-top-icon.png');
             background-repeat: no-repeat;
             width: 13px;

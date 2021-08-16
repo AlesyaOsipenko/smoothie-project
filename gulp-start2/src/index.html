@@ -145,7 +145,7 @@
         </div>
 
         <div class="header-content">
-            <a class="header__btn btn--green-bg" href="#">Shop Now
+            <a class="animated slideInLeft header__btn btn--green-bg" href="#">Shop Now
             </a>
         </div>
         </div>
@@ -156,7 +156,7 @@
     <section class="smoothies">
         <div class="container">
             <div class="smoothies__inner">
-                <h2 class="title smoothies__title text--orange">What are these smoothies?</h2>
+                <h2 class=" animated slideInLeft wow title smoothies__title text--orange">What are these smoothies?</h2>
                 <p class="text smoothies__text text--black">A smoothie is a drink made from pureed raw fruit,
                     vegetables,
                     and sometimes dairy products (milk, yogurt, ice-cream or cottage cheese),
@@ -207,10 +207,10 @@
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about__img">
-                    <img class="about__img-left" src="./assets/images/photoshop-img/about-img.png" alt="#">
+                <div class="animated bounceInLeft wow about__img">
+                    <img class="about__img-left"  data-tilt src="./assets/images/photoshop-img/about-img.png" alt="#">
                 </div>
-                <div class="about__info">
+                <div class=" animated bounceInRight wow about__info">
                     <h2 class="title about__title text--white">
                         What makes Smoothie <br> an <span class="about__title-green">awesome drink?</span>
                     </h2>
@@ -235,25 +235,25 @@
     <section class="products">
         <div class="products__wrapper">
             <div class="products__card">
-                <img class="products__img" src="./assets/images/photoshop-img/bottle-1.png" alt="#">
+                <img class="animated pulse wow products__img" src="./assets/images/photoshop-img/bottle-1.png" alt="#">
                 <h3 class="products__title text--white">Dark Chocolate Smoothie</h3>
                 <span class="products__subtitle">100 ml</span>
                 <a class="btn products__btn" href="#"> <span class="btn__buy">Buy</span></a>
             </div>
             <div class="products__card">
-                <img class="products__img" src="./assets/images/photoshop-img/bottle-2.png" alt="#">
+                <img class="animated pulse wow  products__img" src="./assets/images/photoshop-img/bottle-2.png" alt="#">
                 <h3 class="products__title text--white">Vegan Lettuce Smoothie</h3>
                 <span class="products__subtitle">100 ml</span>
                 <a class="btn products__btn" href="#"><span class="btn-arrow-yellow btn__buy">Buy</span></a>
             </div>
             <div class="products__card">
-                <img class="products__img" src="./assets/images/photoshop-img/bottle-3.png" alt="#">
+                <img class="animated pulse wow  products__img" src="./assets/images/photoshop-img/bottle-3.png" alt="#">
                 <h3 class="products__title text--white">Lemon Ginger Smoothie</h3>
                 <span class="products__subtitle">100 ml</span>
                 <a class="btn products__btn" href="#"><span class="btn__buy">Buy</span></a>
             </div>
             <div class="products__card">
-                <img class="products__img" src="./assets/images/photoshop-img/bottle-4.png" alt="#">
+                <img class="animated pulse wow products__img" src="./assets/images/photoshop-img/bottle-4.png" alt="#">
                 <h3 class="products__title text--white">Turmeric Garlic Smoothie</h3>
                 <span class="products__subtitle">100 ml</span>
                 <a class="btn products__btn" href="#"><span class="btn__buy">Buy</span></a>
@@ -275,7 +275,7 @@
                     </div>
                     <button class="btn story__btn btn--green-bg">Who we are</button>
                 </div>
-                <div class="story__image">
+                <div class="animated swing wow story__image">
                     <img class="story__pic" src="./assets/images/photoshop-img/our_story-img.png" alt="">
                 </div>
             </div>
@@ -287,7 +287,7 @@
         <div class="container">
             <div class="testimonials__content">
                 <div class="testimonials__title">
-                    <h3 class="title testimonials__subtitle text--orange">Why clients <span>LOVE</span> us?</h3>
+                    <h3 class="animated flash wow  testimonials__subtitle text--orange">Why clients <span>LOVE</span> us?</h3>
                 </div>
 
                 <div class="testimonials__comment comment">
@@ -317,7 +317,7 @@
             <div class="blog__wrapper">
                 <div class="blog__inner">
                     <h3 class="title blog__title text--orange">Our blog</h3>
-                    <div class="blog__inner-img">
+                    <div class="animated flipInY wow blog__inner-img">
                         <img class="blog__img" src="./assets/images/photoshop-img/blog-img.png" alt="#">
                     </div>
                 </div>
@@ -444,6 +444,13 @@
         </div>
         <a href="#main" class="footer__copyright-btn"></a>
     </div>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    
+   
+        <script>
+            new WOW().init();
+            </script>
+    
 </body>
 
 </html>
